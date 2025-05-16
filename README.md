@@ -1,70 +1,112 @@
-EDA Hotel Booking Analysis
-🏨 Hotel Booking Data Analysis (EDA)
+# 🏨 Hotel Booking Data Analysis (EDA)
 
-This project focuses on Exploratory Data Analysis (EDA) of a hotel booking dataset from Booking.com, aiming to uncover actionable insights that can help:
+This project focuses on **Exploratory Data Analysis (EDA)** of a hotel booking dataset sourced from **Booking.com**, with the goal of uncovering **actionable insights** to:
 
-• Optimize hotel revenue • Reduce booking cancellations • Improve overall customer satisfaction
+- 📈 Optimize hotel revenue  
+- ❌ Reduce booking cancellations  
+- 😀 Improve customer satisfaction  
 
-📂 Dataset Overview
+---
 
-The dataset contains hotel booking records, including variables like:
+## 📂 Dataset Overview
 
-• Reservation status • Lead time • Room type • Country • Booking source • Pricing and more
+The dataset contains detailed hotel booking records, with variables such as:
 
-Initial steps include:
+- Reservation status  
+- Lead time  
+- Room type  
+- Country  
+- Booking source  
+- Pricing  
+- And more...
 
-• Viewing column names and data types • Identifying and handling missing values and duplicate entries
+### 🔍 Initial Steps:
+- Viewed column names and checked data types  
+- Handled missing values and removed duplicate entries  
 
-🧹 Data Wrangling
+---
 
-We addressed the following issues:
+## 🧹 Data Wrangling
 
-• Missing Values: Imputed for columns such as children, country, agent, and company
+We cleaned and transformed the dataset by addressing the following:
 
-• Outliers: Detected in lead_time and adr using boxplots and handled using the IQR method
+### 🔧 Missing Values
+- Imputed missing values for `children`, `country`, `agent`, and `company`
 
-• Duplicates: Removed to ensure data integrity
+### 🚨 Outlier Treatment
+- Identified outliers in `lead_time` and `adr` using boxplots  
+- Treated them using the **Interquartile Range (IQR)** method  
 
-📊 Data Aggregation & Insight Extraction
+### 🧽 Duplicates
+- Removed duplicate records to ensure data integrity
 
-Performed group-wise aggregations and transformations to uncover insights, such as:
+---
 
-• Average lead time per reserved room type • Top countries by booking volume • Cancellation rate by market segment • And much more...
+## 📊 Data Aggregation & Insight Extraction
 
-All data manipulations and insights were documented step-by-step.
+Grouped and analyzed data to extract key insights:
 
-📈 Data Visualization
+- 📅 Average lead time by reserved room type  
+- 🌍 Top countries by booking volume  
+- 💼 Cancellation rate by market segment  
+- 💸 ADR trends across distribution channels  
 
-🔹 Univariate Analysis
+All steps were documented clearly with corresponding code and outputs.
 
-• Visualized distributions of individual variables like room_type, lead_time, and customer_type
+---
 
-• Tools used: Bar charts, Pie charts, Histograms, Count plots, Word cloud
+## 📈 Data Visualization
 
-🔸 Bivariate Analysis • Explored relationships between two variables at a time
+### 🔹 Univariate Analysis
+- Examined individual feature distributions  
+- Tools used: **Bar charts**, **Histograms**, **Pie charts**, **Count plots**, **WordCloud**
 
-• Examples: o reserved_room_type vs. assigned_room_type
+### 🔸 Bivariate Analysis
+- Explored pairwise relationships  
+- Examples:
+  - `reserved_room_type` vs `assigned_room_type`  
+  - `lead_time` vs `reservation_status`  
+- Tools used: **Box plots**, **Heatmaps**, **Bar plots**
 
-o lead_time vs. reservation_status
+### 🔺 Multivariate Analysis
+- Analyzed interactions between multiple variables  
+- Example: `lead_time`, `adr`, and `days_in_waiting_list` in relation to `reservation_status`  
+- Tool used: **Pair plots**
 
-• Tools used: Box plots, Heatmaps, Bar plots
+---
 
-🔺 Multivariate Analysis • Analyzed the interaction between multiple variables
+## 💡 Key Insights & Business Impact
 
-• Example: lead_time, adr, and days_in_waiting_list in relation to reservation_status
+- 📉 Higher cancellation rates linked to specific market segments (e.g., online bookings without deposits)  
+- 🛏️ Room type mismatches can impact guest satisfaction and loyalty  
+- ⏱️ Longer lead times often correlate with lower ADR, indicating potential for early bird pricing models  
+- 📊 Booking source and country trends suggest targeted marketing opportunities  
 
-• Tool used: Pair plots
+---
 
-💡 Key Insights & Business Impact
+## ✅ Conclusion & Business Recommendations
 
-• Identified patterns in cancellation rates linked to specific market segments • Highlighted how room upgrades or mismatches influence customer satisfaction • Showed impact of booking lead time on average daily rate (ADR) • Insights provided actionable recommendations for pricing strategies and customer engagement
+- ✳️ Implement **targeted retention strategies** for high-risk segments  
+- 🏷️ Develop **dynamic pricing models** based on booking behavior  
+- 📞 Encourage direct bookings to lower cancellation rates and increase margins  
+- 📢 Use insights for **personalized marketing** and upselling opportunities  
 
-✅ Conclusion & Business Solutions
+---
 
-The analysis concludes with:
+## 🛠 Tools & Technologies
 
-• Data-driven solutions aligned with the business objectives • Strategies to improve booking retention • Ideas for dynamic pricing models based on customer behavior
+- **Python**  
+- **Pandas**, **NumPy**  
+- **Matplotlib**, **Seaborn**  
+- **Google Colab Notebook**
 
-🛠 Tools Used
+---
 
-• Python • Pandas, NumPy • Matplotlib, Seaborn • WordCloud • Colab Notebook
+## 📌 Status
+
+✅ Completed EDA  
+🧠 Insights documented  
+📦 Ready for integration into reporting pipelines or dashboard solutions
+
+---
+
